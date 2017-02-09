@@ -1,0 +1,19 @@
+plugins {
+    id "org.golang.mobile.bind" version "0.2.6"
+}
+
+gobind {
+    /* The Go package path; must be under one of the GOPATH elements or
+     a relative to the current directory (e.g. ../../hello) */
+    pkg = "md5/hash"
+
+    /* GOPATH where the Go package is; check `go env` */
+    // GOPATH = "/YOUR/GOPATH"
+
+    /* Absolute path to the go binary */
+    // GO = "/PATH/TO/GO"
+
+    /* Optionally, set the absolute path to the gomobile binary if the
+    /* gomobile binary is not located in the GOPATH's bin directory. */
+    // GOMOBILE = "/PATH/TO/GOMOBILE"
+}
